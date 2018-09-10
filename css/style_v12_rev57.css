@@ -1,0 +1,458 @@
+@charset "UTF-8";
+
+/*!
+*	Ergastolator Website Style Redesign v12
+*	(C) 2018 ErgastolatorOfficial1. Tutti i diritti riservati/All rights reserved.
+*	To use this style you must credit me. / Per usare questo stile devi creditarmi.
+*	I put some effort making these stylesheets, so consider subscribing to my channel!
+*	Metto un po' di impegno per fare questi fogli di stile, quindi considera di iscriverti al mio canale!
+*/
+
+/* Google Fonts / Font di Google */
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Noto+Sans:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+/* Font Awesome CSS / CSS di Font Awesome */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css");
+
+/* Elements without classes styling / Stile degli elementi senza classe */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: #DDD;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.center {
+	text-align: center;
+}
+
+.youtube {
+	width: 854px;
+	height: 480px;
+	border: 1px solid black;
+	border-radius: 5px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.no_justify.v12_no_justify {
+	text-align: left;
+}
+
+.toggle_dark_mode {
+    cursor: pointer;
+}
+
+.small {
+    font-size: 11.5px;
+}
+
+hr {
+    border-color: #FFF;
+    border-style: solid;
+}
+
+/* Navbar styling / Stile della navbar */
+.nav {
+	background: #333;
+	width: 100%;
+	height: 4em;
+	position: fixed;
+	top: 0;
+	border-bottom: 2px solid #222;
+}
+
+.nav .logo {
+	float: left;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 700;
+}
+
+.nav .logo a {
+	text-decoration: none;
+	color: #FFF;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.nav .logo a:hover {
+	color: #33FF33;
+}
+
+.nav ul {
+	margin: 0;
+	float: right;
+	padding-right: 15px;
+	display: inline;
+}
+
+.nav ul li {
+	display: inline-block;
+	padding: 22px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #FFF;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.nav ul li a:hover {
+	color: #FF33FF;
+}
+
+.nav ul li.active {
+	background: #FF33FF;
+}
+
+.nav ul li.active a:hover {
+	color: #FFF;
+}
+
+.nav-icon {
+	display: none;
+	float: right;
+	padding-right: 15px;
+	padding-top: 15px;
+	color: #FFF;
+}
+
+.nav-icon:before {
+	content: "\f0c9";
+	font-family: FontAwesome;
+	font-size: 1.989em;
+}
+
+.nav-close:before {
+    content: "\f00d";
+}
+
+/* Content styling / Stile del contenuto */
+
+.content.v12_content {
+	margin: 6em;
+	padding: 19px;
+	background: #FFF;
+	text-align: justify;
+	-webkit-box-shadow: 20px 20px 10px grey;
+	-moz-box-shadow: 20px 20px 10px grey;
+	box-shadow: 20px 20px 10px grey;
+	border-radius: 5px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.content.v12_content h2 {
+	font-size: 2em;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.content.v12_content a {
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.content.v12_content a:hover {
+    color: #33FF33;
+}
+
+/* Footer styling / Stile del footer */
+.footer {
+	background: #333;
+	width: 100%;
+	height: 6em;
+	position: fixed;
+	bottom: 0;
+	color: #FFF;
+	border-top: 2px solid #222;
+}
+
+.footer p {
+	margin: 0;
+	padding: 15px;
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 14px;
+	float: left;
+}
+
+.footer .copyright {
+	padding: 15px;
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 14px;
+	float: right;
+	text-align: right;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #FFF;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.footer a:hover {
+	color: #33FF33;
+}
+
+.footer .center {
+    padding: 15px 411px;
+}
+
+/* Custom form / Form personalizzato */
+.custom_form.v12_custom_form {
+	display: block;
+}
+.custom_form.v12_custom_form input[type="text"], input[type="email"], textarea {
+	font-family: "Roboto", sans-serif;
+	font-size: 13px;
+	background: #DDD;
+	border-radius: 5px;
+	display: block;
+	margin: 5px;
+	padding: 5px;
+}
+
+.custom_form.v12_custom_form textarea {
+	resize: none;
+}
+
+.custom_form.v12_custom_form input[type="submit"] {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	background: #FF33FF;
+	border: none;
+	color: #FFF;
+	display: block;
+	margin: 5px;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.custom_form.v12_custom_form input[type="submit"]:hover {
+	background: #333;
+}
+
+/* Dark mode */
+.body_dark.v12_body_dark {
+    background: #333;
+}
+
+.dark.v12_dark {
+    color: #FFF;
+    background: #000;
+    -webkit-box-shadow: 20px 20px 10px #222;
+	-moz-box-shadow: 20px 20px 10px #222;
+	box-shadow: 20px 20px 10px #222;
+}
+
+.dark.v12_dark .youtube {
+    border: 1px solid white;
+}
+
+.dark.v12_dark .custom_form.v12_custom_form input[type="submit"]:hover {
+    background: #FFF;
+    color: #333;
+}
+
+.dark.v12_dark a {
+    color: #FFF;
+}
+
+/* Coloured text animation / Animazione del testo colorato */
+.coloured_text, .coloured_link {
+    -webkit-animation: colour-change 7s infinite;
+    -moz-animation: colour-change 7s infinite;
+    -o-animation: colour-change 7s infinite;
+    animation: colour-change 7s infinite;
+}
+
+@-webkit-keyframes colour-change {
+    0% {color: #FF0000;}
+    10% {color: #FF0066;}
+    20% {color: #FF00FF;}
+    30% {color: #6666FF;}
+    40% {color: #0000FF;}
+    50% {color: #00FFCC;}
+    60% {color: #00FF00;}
+    70% {color: #FFFF00;}
+    80% {color: #CC3300;}
+    90% {color: #993300;}
+    100% {color: #FF0000;}
+}
+
+@-moz-keyframes colour-change {
+    0% {color: #FF0000;}
+    10% {color: #FF0066;}
+    20% {color: #FF00FF;}
+    30% {color: #6666FF;}
+    40% {color: #0000FF;}
+    50% {color: #00FFCC;}
+    60% {color: #00FF00;}
+    70% {color: #FFFF00;}
+    80% {color: #CC3300;}
+    90% {color: #993300;}
+    100% {color: #FF0000;}
+}
+
+@-o-keyframes colour-change {
+    0% {color: #FF0000;}
+    10% {color: #FF0066;}
+    20% {color: #FF00FF;}
+    30% {color: #6666FF;}
+    40% {color: #0000FF;}
+    50% {color: #00FFCC;}
+    60% {color: #00FF00;}
+    70% {color: #FFFF00;}
+    80% {color: #CC3300;}
+    90% {color: #993300;}
+    100% {color: #FF0000;}
+}
+
+@keyframes colour-change {
+    0% {color: #FF0000;}
+    10% {color: #FF0066;}
+    20% {color: #FF00FF;}
+    30% {color: #6666FF;}
+    40% {color: #0000FF;}
+    50% {color: #00FFCC;}
+    60% {color: #00FF00;}
+    70% {color: #FFFF00;}
+    80% {color: #CC3300;}
+    90% {color: #993300;}
+    100% {color: #FF0000;}
+}
+
+/* For mobile devices and other devices / Per dispositivi mobili ed altri dispositivi */
+@media (max-width: 1024px) {
+	.youtube {
+		width: 500px;
+		height: 300px;
+	}
+}
+
+@media (max-width: 846px) {
+    .nav {
+        border-bottom: none;
+    }
+    
+	.nav-icon {
+		display: block;
+	}
+	
+	.nav .logo {
+		padding-left: 20px;
+	}
+	
+	.nav ul {
+		display: block;
+		width: 100%;
+		height: 0;
+		background: #333;
+		padding-right: 2px;
+		padding-left: 5px;
+		border-bottom: 2px solid #222;
+	}
+	
+	.nav ul li {
+		display: none;
+		padding: 14px;
+		padding-left: 20px;
+	}
+	
+	.nav ul.showing {
+		height: 15em;
+	}
+	
+	.nav ul.showing li {
+		display: block;
+	}
+}
+
+@media (max-width: 780px) {
+    .footer {
+        height: 6em;
+    }
+}
+
+@media (max-width: 768px) {
+	.content.v12_content {
+		margin: 6em 1em;
+		padding: 5px;
+		-webkit-box-shadow: 10px 10px 10px grey;
+		-moz-box-shadow: 10px 10px 10px grey;
+		box-shadow: 10px 10px 10px grey;
+	}
+	
+	.dark.v12_dark {
+	    -webkit-box-shadow: 10px 10px 10px #222;
+	    -moz-box-shadow: 10px 10px 10px #222;
+	    box-shadow: 10px 10px 10px #222;
+	}
+	
+	.footer {
+		height: 6em;
+	}
+	
+	.youtube {
+		width: 300px;
+		height: 250px;
+	}
+}
+
+@media (max-width: 411px) {
+    .footer .center {
+        padding: 15px 205.5px;
+    }
+}
+
+@media (max-width: 368px) {
+	.youtube {
+		width: 250px;
+		height: 200px;
+	}
+}
+
+/* Code that aligns the content for mobile devices / Codice che rende il tutto ben allineato con dispositivi mobili */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
